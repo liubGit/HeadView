@@ -4,18 +4,7 @@
 该项目参考了：[https://github.com/cpoopc/ScrollableLayout](https://github.com/cpoopc/ScrollableLayout) 喜欢原作的可以去使用。相比原项目，代码更简单易懂，扩展性更高，欢迎大家下载体验本项目，如果使用过程中遇到什么问题，欢迎反馈。
 
 ## 演示
- ![image](http://7xss53.com2.z0.glb.clouddn.com/headerviewpager/demo1.png) ![image](http://7xss53.com2.z0.glb.clouddn.com/headerviewpager/demo2.gif) ![image](http://7xss53.com2.z0.glb.clouddn.com/headerviewpager/demo3.gif)
-## 1.用法
-该项目和我github上其他的view相关的项目已经一起打包上传到jCenter仓库中（源码地址 [https://github.com/jeasonlzy0216/ViewCore](https://github.com/jeasonlzy0216/ViewCore) ），使用的时候可以直接使用compile依赖，用法如下
-###该项目中使用到的大部分自定义控件，均来源于上述仓库
-```java
-	compile 'com.lzy.widget:view-core:0.2.1'
-```
-或者使用
-```java
-    compile project(':header_viewpager')
-```
-
+ ![image](http://7xss53.com2.z0.glb.clouddn.com/headerviewpager/demo1.png) ![image]
 ## 2.实现原理
 把自定义控件 `HeaderViewPagerLayout` 的 `dispatchTouchEvent` 方法进行重写，根据手势方向决定是否分发事件，同时使用 Scroller 滚动内部视图，达到滑动的连续性。 具体详细代码，实例代码中会有详细注释。
 
